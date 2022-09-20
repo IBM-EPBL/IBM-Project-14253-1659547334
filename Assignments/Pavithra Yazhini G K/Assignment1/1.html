@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory system</title>
+    <link rel="stylesheet" href="3.css">
+</head>
+
+<body>
+    <h1>"Fill Your Response!"</h1>
+    <form action="http://localhost:5000/login" method="POST">
+        <table>
+            <tr>
+                <td><label for="name">Name</label></td>
+                <td><input type="text" name="username" id="name"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="text" name="mail" id="umail"></td>
+            </tr>
+            <tr>
+                <td><label for="pass">Password</label></td>
+                <td><input type="password" name="pass" id="upass"></td>
+            </tr>
+            <tr>
+                <td><label for="roll">Roll No</label></td>
+                <td><input type="text" name="roll" id="uroll"></td>
+            </tr>
+            <tr>
+                <td><label>Gender</label></td>
+                <td>
+                    <label><input type="radio" value="f" name="gender" id="ugender"> Female</label>
+                    <label><input value="m" type="radio" name="gender" id="ugender"> Male</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                        <label for="course">Course</label>
+                </td>
+                <td>
+                        <select id="ucourse" name="course">
+                            <option disabled selected>--Choose Course--</option>
+                                    <option>cloud compting</option>
+                                    <option>sena</option>
+                                    <option>stqa</option>
+                                    <option>crypto</option>
+                        </select>
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>    
+</body>
+</html>
