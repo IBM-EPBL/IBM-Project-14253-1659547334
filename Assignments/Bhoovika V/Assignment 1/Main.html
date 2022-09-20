@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript">
+        function validate()
+        {
+        var uname=document.getElementById("name");
+        var umail=document.getElementById("mail");
+        var upass=document.getElementById("pass");
+        var uroll=document.getElementById("roll");
+        var ucourse=document.getElementById("course");
+        var ugender=document.getElementById("gender");
+        
+        if(uname.value==""|| umail.value==""|| upass.value==""|| uroll.value=="" || ucourse.value==""|| ugender.value=="")
+        {
+        alert("fill all the details");
+        return false;
+        }
+        else{
+        return true;
+        }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>"REGISTRATION FORM"</h1>
+    <form onsubmit="return validate()" action="http://localhost:5000/login" method="POST">
+        <table>
+            <tr>
+                <td><label for="name">Name</label></td>
+                <td><input type="text" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="text" name="mail" id="mail"></td>
+            </tr>
+            <tr>
+                <td><label for="pass">Password</label></td>
+                <td><input type="password" name="pass" id="pass"></td>
+            </tr>
+            <tr>
+                <td><label for="roll">Roll No</label></td>
+                <td><input type="text" name="roll" id="roll"></td>
+            </tr>
+            <tr>
+                <td><label>Gender</label></td>
+                <td>
+                    <label><input type="radio" value="f" name="gender" id="gender"> Female</label>
+                    <label><input value="m" type="radio" name="gender" id="gender"> Male</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                        <label for="course">Course</label>
+                </td>
+                <td>
+                        <select id="course" name="course">
+                            <option disabled selected>--Choose Course--</option>
+                                    <option>cloud compting</option>
+                                    <option>sena</option>
+                                    <option>stqa</option>
+                                    <option>crypto</option>
+                        </select>
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>    
+</body>
+</html>

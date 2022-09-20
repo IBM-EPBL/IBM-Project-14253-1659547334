@@ -1,0 +1,36 @@
+input[type=text],input[type=password]{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=submit],input[type=reset]{
+    width: 45%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+
+body{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdBUu1CMmdsm_f5MDj6AyyTZhq4mPK98_SiA&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: 1600px 750px;
+    text-align: center;
+    max-width: max-content;
+    margin: auto; 
+       
+}
+
+table, tr, td {
+    border: 2px solid white;
+    color: black;
+    width: 350px;
+    table-layout: fixed;
+    height: 80px;
+    font-size: 30px;
+    text-align: center;
+}
+
+
