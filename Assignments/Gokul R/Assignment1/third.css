@@ -1,0 +1,37 @@
+input[type=text],input[type=password]{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=submit],input[type=reset]{
+    width: 45%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-size: 1600px 750px;
+    text-align: center;
+    max-width: max-content;
+    margin: auto; 
+       
+}
+
+table, tr, td {
+    text-align: center;
+    border: 2px;
+    background-color:#A5F1E9;
+    color:black;
+    width: 300px;
+    table-layout: fixed;
+    height: 80px;
+    font-size: 20px;
+    
+}
+
+
