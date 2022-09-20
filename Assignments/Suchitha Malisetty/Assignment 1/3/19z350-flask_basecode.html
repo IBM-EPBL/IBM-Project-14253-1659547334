@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript">
+        function validate()
+        {
+        let firstname = document.forms["formvalid"]["name"].value;
+        let email = document.forms["formvalid"]["mail"].value;
+        let password = document.forms["formvalid"]["pass"].value;
+        let rollno = document.forms["formvalid"]["roll"].value;
+        let subject = document.forms["formvalid"]["course"].value;
+        let gen = document.forms["formvalid"]["gender"].value;
+
+        localStorage.setItem("fname", firstname);
+        localStorage.setItem("mail", email);
+        localStorage.setItem("pass", password);
+        localStorage.setItem("roll", rollno);
+        localStorage.setItem("course", subject);
+        localStorage.setItem("gender", gen);
+        
+        if(firstname=="" || email=="" || password=="" || rollno=="" || subject=="--Choose Course--" || gen=="")
+        {
+        alert("Fill all the details");
+        return false;
+        }
+        else{
+        return true;
+        }
+        }
+        </script>
+</head>
+
+<body>
+    <h1>COURSE REGISTRATION FORM</h1>
+    <form name="formvalid" onsubmit="return validate()" action="http://localhost:5000/login" method="GET">
+        <table>
+            <tr>
+                <td>
+                    <label for="name">Name</label>
+                </td>
+                <td>
+                    <input type="text" name="name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email</label>
+                </td>
+                <td>
+                    <input type="text" name="mail">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                        <label for="pass">Password</label>
+                </td>
+                <td>
+                        <input type="password" name="pass">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="roll">Roll No</label>
+                </td>
+                <td>
+                    <input type="text" name="roll">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Gender</label>
+                </td>
+                <td>
+                    <label><input type="radio" value="f" name="gender"> Female</label>
+                    <label><input value="m" type="radio" name="gender"> Male</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                        <label for="course">Course</label>
+                </td>
+                <td>
+                        <select id="course" name="course">
+                            <option disabled selected>--Choose Course--</option>
+                                    <option>Cloud Compting</option>
+                                    <option>SENA</option>
+                                    <option>STQA</option>
+                                    <option>Cryptography</option>
+                        </select>
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>    
+</body>
+</html>
