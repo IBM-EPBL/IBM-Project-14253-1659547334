@@ -1,0 +1,36 @@
+input[type=text],input[type=password]{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=submit],input[type=reset]{
+    width: 45%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+
+body{
+    background-image: url("https://st.depositphotos.com/1897095/1642/i/600/depositphotos_16428473-stock-photo-fog-and-pastel-gradient.jpg");
+    background-repeat: no-repeat;
+    background-size: 1600px 750px;
+    text-align: center;
+    max-width: max-content;
+    margin: auto; 
+       
+}
+
+table, tr, td {
+    border: 2px solid rgb(0, 0, 0);
+    color: black;
+    width: 350px;
+    table-layout: fixed;
+    height: 80px;
+    font-size: 30px;
+    text-align: center;
+}
+
+
