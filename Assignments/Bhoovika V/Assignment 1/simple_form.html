@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function testVariable() {
+            var strText = document.getElementById("textone").value;          
+            var strText1 = document.getElementById("textTWO").value;
+            var strText2 = document.getElementById("text3").value;
+            var strText3 = document.getElementById("text4").value;
+            var result = 'Name: '+strText + ' Qualification: ' + strText1+ ' Age: ' + strText2+ ' Email: ' + strText3;
+            document.getElementById('spanResult').textContent = result;
+             
+        }
+    </script>
+</head>
+<body> 
+    Name:<input type="text" id="textone" />
+    Qualification:<input type="text" id="textTWO" />
+    Age:<input type="text" id="text3" />
+    Email:<input type="text" id="text4" />
+
+    <button  onclick="testVariable()">Submit</button> <br />
+    <span id="spanResult">
+
+    </span>
+   
+     
+</body>
+</html>
