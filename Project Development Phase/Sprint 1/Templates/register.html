@@ -1,0 +1,98 @@
+<html>
+<head>
+
+<style>
+  body 
+{
+  background-image: url("https://media.istockphoto.com/id/1339787499/photo/empty-dark-blue-studio-room-with-light-and-shadow-abstract-background-copy-space-studio-room.jpg?b=1&s=170667a&w=0&k=20&c=sEYFpHbrxOugC-NlO4vh1AQurJAsR-RnLbg_KHgj3kM=");
+  background-repeat: no-repeat;
+  background-size: 1600px 750px;
+ }
+.form1
+  {
+   height: 400px;
+   width: 40%;
+   
+   border: 1px solid #4CAF50;
+   margin:20 20 20 20px;
+   background-color: white;
+   border-radius: 0px;
+   text-align: center;
+   vertical-align: middle;
+   padding-left: 10px;
+   padding-right: 10px;
+   font-family: "Times New Roman";
+   
+}
+.button {
+  background-color:  #050839;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.button:hover {opacity: 1}
+</style>
+
+
+<title>Form Validation</title>
+
+
+</head>
+<body>
+
+<form method="POST" action = "http://localhost:5000/register">
+ 
+<br>
+<center>
+<br>
+
+<table class="form1" bordercolor="#7FFFD4" cellspacing="2" cellpadding="2" width="50%" height="400px">
+<br>
+ <tr>
+    <th style="width:180px"></th>
+    <th style="width:80px"></th>
+  </tr>
+<tr>
+<center><td colspan="2"><h1><center>Register</center></h1></td></center>
+</tr>
+<tr>
+  <td colspan="2">
+    <div>{{ msg }}</div>
+  </td>
+</tr>
+<tr>
+<td style="font-size: 18pt;">&nbsp&nbsp&nbspUser Name :</td>
+<td><input type="text" style="height: 40px; width:280px; " placeholder="User name" name="username" pattern="[A-Za-z0-9]*" required>
+</td>
+</tr>
+
+<tr>
+<td style="font-size: 18pt;">&nbsp&nbsp&nbspPassword :</td>
+<td><input type="password" style="height: 40px; width:280px; " placeholder="Password" name="password" pattern="[A-Za-z0-9]{5}[A-Za-z0-9]*" required>
+</td>
+</tr>
+
+<tr>
+    <td style="font-size: 18pt;">&nbsp&nbsp&nbspEmail :</td>
+    <td><input type="email" style="height: 40px; width:280px; " placeholder="Email" name="email" required>
+    </td>
+</tr>
+
+<tr><td colspan="2"><center></center><button class="button">Submit</button></center></td></tr>
+
+<tr><td colspan="2"><center><a href="login.htm">Return to login page</a></center></tr></td>
+
+</table>
+<br><br>
+
+</center>
+</form>
+</body>s
